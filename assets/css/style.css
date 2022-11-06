@@ -1,0 +1,4 @@
+.progress { margin: 40px; }
+td { border-bottom: none; }
+.table { width: 90%;margin: 20px auto;text-align: center; }
+.table thead { background: #0071AD;color: #fff;border-radius: 10px; }

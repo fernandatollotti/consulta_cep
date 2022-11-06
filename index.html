@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulte seu CEP</title>
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row pt-5">
+
+        <div class="col-md-3">
+          <h2 class="text-primary pb-3">Busca CEP</h2>
+
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Digite seu CEP" aria-describedby="btn_search" id="input_cep">
+            <button type="submit" class="input-group-text" id="btn_search"><i class="fa-solid fa-magnifying-glass"></i></button>
+          </div>
+
+          <span class="text-danger fw-bold" id="message"></span>
+        </div>
+
+        <div class="col-md-9">
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped" role="progressbar" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Logradouro</th>
+                <th scope="col">Complemento</th>
+                <th scope="col">Bairro</th>
+                <th scope="col">Localidade</th>
+                <th scope="col">UF</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td id="logradouro"></td>
+                <td id="complemento"></td>
+                <td id="bairro"></td>
+                <td id="localidade"></td>
+                <td id="uf"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div id="message_error"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
